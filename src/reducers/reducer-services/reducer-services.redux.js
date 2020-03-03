@@ -1,5 +1,5 @@
-import types from "./redux-services.type";
-import initialState from "./redux-services.state";
+import types from "./reducer-services.type";
+import initialState from "./reducer-services.state";
 
 export const servicesState = initialState;
 

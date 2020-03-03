@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useStore } from "../../redux";
+import { useStore } from "../../reducers";
 
 const useDataFetching = serviceFunction => {
     const { dispatch, state } = useStore();

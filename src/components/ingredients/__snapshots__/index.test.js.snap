@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Igredients Component FAILED renders and create snapshot <Ingredients /> 1`] = `
+<Ingredients
+  date="10-11-12"
+  title="Cooking"
+>
+  <styled.div
+    className="ingredients"
+  >
+    <div
+      className="sc-AxjAm beINzg ingredients"
+    >
+      <div
+        className="ingredients--box"
+      >
+        <div
+          className="ingredients__text"
+          test_id="text-ingredients-top"
+        >
+          <div
+            className="ingredients__caption"
+          >
+            Title
+          </div>
+          <div
+            className="ingredients__title"
+          >
+            Cooking
+          </div>
+        </div>
+        <div
+          className="ingredients__text"
+          test_id="text-ingredients-bottom"
+        >
+          <div
+            className="ingredients__caption"
+          >
+            Use By
+          </div>
+          <div
+            className="ingredients__date"
+          >
+            10-11-12
+          </div>
+        </div>
+      </div>
+    </div>
+  </styled.div>
+</Ingredients>
+`;
+
+exports[`Igredients Component SUCCESS renders and create snapshot  <Ingredients /> 1`] = `
+<Ingredients
+  date="10-11-12"
+  title="Cooking"
+>
+  <styled.div
+    className="ingredients"
+  >
+    <div
+      className="sc-AxjAm beINzg ingredients"
+    >
+      <div
+        className="ingredients--box"
+      >
+        <div
+          className="ingredients__text"
+          test_id="text-ingredients-top"
+        >
+          <div
+            className="ingredients__caption"
+          >
+            Title
+          </div>
+          <div
+            className="ingredients__title"
+          >
+            Cooking
+          </div>
+        </div>
+        <div
+          className="ingredients__text"
+          test_id="text-ingredients-bottom"
+        >
+          <div
+            className="ingredients__caption"
+          >
+            Use By
+          </div>
+          <div
+            className="ingredients__date"
+          >
+            10-11-12
+          </div>
+        </div>
+      </div>
+    </div>
+  </styled.div>
+</Ingredients>
+`;

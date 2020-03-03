@@ -1,5 +1,5 @@
 // begin reducer
-import { servicesAction } from "../../redux";
+import { servicesAction } from "../../reducers";
 // end reducer
 
 const homePageService = {
