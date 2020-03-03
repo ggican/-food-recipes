@@ -1,4 +1,4 @@
 export { StoreProvider, useStore } from "./stores";
 
 // action export
-export { servicesAction } from "./redux-services";
+export { servicesAction } from "./reducer-services";

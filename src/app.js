@@ -1,16 +1,16 @@
 import React from "react";
-import PagesHome from "./pages/home";
+import HomePage from "./pages/home";
 import Header from "./components/layouts/header";
 import Footer from "./components/layouts/footer";
 
-const Wrapper = () => {
+const App = () => {
     return (
         <>
             <Header></Header>
-            <PagesHome id="page-home"></PagesHome>
+            <HomePage id="page-home"></HomePage>
             <Footer></Footer>
         </>
     );
 };
 
-export default Wrapper;
+export default App;

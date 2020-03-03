@@ -2,7 +2,7 @@ import React, { createContext, useReducer, useContext } from "react";
 import PropTypes from "prop-types";
 
 // import reducer function
-import { servicesState, servicesRedux } from "./redux-services";
+import { servicesState, servicesRedux } from "./reducer-services";
 
 // combine initial states
 const combineState = {
