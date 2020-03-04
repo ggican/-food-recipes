@@ -171,7 +171,82 @@ exports[`Igredients Component SUCCESS renders and create snapshot  <Ingredients 
 </Ingredients>
 `;
 
-exports[`Igredients Component SUCCESS renders style  <Ingredients /> 1`] = `
+exports[`Igredients Component SUCCESS renders loading and create snapshot  <IngredientsLoading /> 1`] = `
+<IngredientsLoading
+  isRecipes={true}
+>
+  <styled.a
+    className="ingredients"
+    isRecipes={true}
+    test_id="ingredients_loading"
+  >
+    <a
+      className="sc-AxjAm bWjhib ingredients"
+    >
+      <div
+        className="ingredients--box"
+      >
+        <div
+          className="ingredients__text"
+        >
+          <div
+            className="ingredients__caption"
+          >
+            <Skeleton
+              height="10px"
+              marginBottom="7px"
+              width="80px"
+            >
+              <styled.div
+                as="div"
+                circle={false}
+                height="10px"
+                marginBottom="7px"
+                style={Object {}}
+                width="80px"
+              >
+                <div
+                  className="sc-AxirZ fokiBL"
+                  height="10px"
+                  style={Object {}}
+                  width="80px"
+                />
+              </styled.div>
+            </Skeleton>
+          </div>
+          <div
+            className="ingredients__title"
+          >
+            <Skeleton
+              height="12px"
+              marginBottom="7px"
+              width="70%"
+            >
+              <styled.div
+                as="div"
+                circle={false}
+                height="12px"
+                marginBottom="7px"
+                style={Object {}}
+                width="70%"
+              >
+                <div
+                  className="sc-AxirZ beingz"
+                  height="12px"
+                  style={Object {}}
+                  width="70%"
+                />
+              </styled.div>
+            </Skeleton>
+          </div>
+        </div>
+      </div>
+    </a>
+  </styled.a>
+</IngredientsLoading>
+`;
+
+exports[`Igredients Component SUCCESS renders style and create snapshot  <StyleIngredients /> 1`] = `
 <styled.a>
   <a
     className="sc-AxjAm jIXtAR"

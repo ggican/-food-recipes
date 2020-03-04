@@ -1,5 +1,6 @@
 import React from "react";
 import Ingredients from "./index";
+import IngredientsLoading from "./index.loading";
 import StyleIngredients from "./index.style";
 
 describe("Igredients Component", () => {
@@ -31,14 +32,27 @@ describe("Igredients Component", () => {
         );
 
         failedElement = <Ingredients isRecipes={false}></Ingredients>;
+        loadingElement = (
+            <IngredientsLoading isRecipes={false}></IngredientsLoading>
+        );
     });
 
     it("SUCCESS renders and create snapshot  <Ingredients />", () => {
         expect(toJson(mount(successElement))).toMatchSnapshot();
     });
 
-    it("SUCCESS renders style  <Ingredients />", () => {
+    it("SUCCESS renders style and create snapshot  <StyleIngredients />", () => {
         expect(toJson(mount(styleIngredients))).toMatchSnapshot();
+    });
+
+    it("SUCCESS renders loading and create snapshot  <IngredientsLoading />", () => {
+        expect(
+            toJson(
+                mount(
+                    <IngredientsLoading isRecipes={true}></IngredientsLoading>,
+                ),
+            ),
+        ).toMatchSnapshot();
     });
 
     it("SUCCESS renders and create snapshot  <Ingredients />", () => {
@@ -102,6 +116,21 @@ describe("Igredients Component", () => {
                 .find({ test_id: "ingredients" })
                 .prop("isRecipes"),
         ).toEqual(true);
+    });
+
+    it("SUCCESS renders loading isRecipes true  <IngredientsLoading />", () => {
+        expect(
+            shallow(
+                <IngredientsLoading isRecipes={true}></IngredientsLoading>,
+            ).prop("isRecipes"),
+        ).toEqual(true);
+    });
+    it("SUCCESS renders loading isRecipes false  <IngredientsLoading />", () => {
+        expect(
+            shallow(
+                <IngredientsLoading isRecipes={false}></IngredientsLoading>,
+            ).prop("isRecipes"),
+        ).toEqual(false);
     });
 
     it("FAILED renders and create snapshot <Ingredients />", () => {

@@ -4,7 +4,11 @@ import Skeleton from "../skeleton";
 
 const IngredientsLoading = ({ isRecipes = false }) => {
     return (
-        <StyleIngredients isRecipes={isRecipes} className="ingredients">
+        <StyleIngredients
+            test_id="ingredients_loading"
+            isRecipes={isRecipes}
+            className="ingredients"
+        >
             <div className="ingredients--box">
                 <div className="ingredients__text">
                     <div className="ingredients__caption">
