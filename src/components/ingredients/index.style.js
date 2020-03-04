@@ -1,20 +1,46 @@
 import styled from "styled-components";
 
-const StyleIngredients = styled.div`
-    display: block;
-    width: 100%;
-    padding: 10px;
+const StyleIngredients = styled.a`
+    display: inline-block;
+    padding: 10px 16px;
     background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 10px 5px;
+    min-width: 150px;
     margin-bottom: 16px;
     cursor: pointer;
+    border-radius: 8px;
     transition: all 0.3s ease-in;
-    /* border-radius: 8px; */
     border: 1px solid #f2f2f2;
+    margin-right: 12px;
+
+    ${({ isRecipes }) =>
+        isRecipes &&
+        `
+        border-radius: 0;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #ddd;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        margin-bottom: 0;
+        cursor: default;
+   `}
+
     &:hover {
         transition: all 0.3s ease-in;
         background-color: #fafafa;
     }
+
+    ${({ isDisabled }) =>
+        isDisabled &&
+        `
+        background-color: rgba(220, 87, 87, 0.25098039215686274);
+        cursor: default;
+        &:hover {
+            background-color: rgba(220, 87, 87, 0.25098039215686274);
+        }
+   `}
+
     .ingredients {
         &--box {
             display: flex;
@@ -43,6 +69,9 @@ const StyleIngredients = styled.div`
             font-size: 14px;
             color: #4a4a4a;
             font-weight: 500;
+            &__exp {
+                color: red;
+            }
         }
     }
 `;

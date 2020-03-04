@@ -1,20 +1,29 @@
 import { useState, useEffect } from "react";
 import { useStore } from "../../reducers";
 
-const useDataFetching = serviceFunction => {
+const useDataFetching = ({
+    serviceFunction = () => {},
+    isReady = false,
+    params,
+    data,
+    group,
+    key,
+}) => {
     const { dispatch, state } = useStore();
     const [isLoading, setLoading] = useState(true);
     const [errorResponse, setError] = useState(false);
     const [messageResponse, setMessageResponse] = useState();
     const [resultsResponse, setResult] = useState([]);
     useEffect(() => {
-        serviceFunction(dispatch);
+        if (isReady) {
+            serviceFunction({ dispatch, params, data });
+        }
         return () => {};
-    }, [dispatch, serviceFunction]);
+    }, [dispatch, serviceFunction, isReady]);
 
     useEffect(() => {
-        conditionResponseService(state.recipes.ingredients, isLoading);
-    }, [state.recipes.ingredients, isLoading]);
+        conditionResponseService(state[group][key], isLoading);
+    }, [state[group][key], isLoading]);
 
     const conditionResponseService = (response, isLoading) => {
         if (response && isLoading) {
@@ -30,6 +39,7 @@ const useDataFetching = serviceFunction => {
     };
 
     return {
+        isReady,
         errorResponse,
         isLoading,
         resultsResponse,
