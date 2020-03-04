@@ -2,14 +2,20 @@
 
 exports[`Igredients Component FAILED renders and create snapshot <Ingredients /> 1`] = `
 <Ingredients
-  date="10-11-12"
+  date="2020-12-25"
+  onClickIngredient={[Function]}
   title="Cooking"
 >
-  <styled.div
+  <styled.a
     className="ingredients"
+    isDisabled={false}
+    isRecipes={false}
+    onClick={[Function]}
+    test_id="ingredients"
   >
-    <div
-      className="sc-AxjAm beINzg ingredients"
+    <a
+      className="sc-AxjAm jIXtAR ingredients"
+      onClick={[Function]}
     >
       <div
         className="ingredients--box"
@@ -39,27 +45,34 @@ exports[`Igredients Component FAILED renders and create snapshot <Ingredients />
             Use By
           </div>
           <div
-            className="ingredients__date"
+            className="ingredients__date "
           >
-            10-11-12
+            2020-12-25
+             
           </div>
         </div>
       </div>
-    </div>
-  </styled.div>
+    </a>
+  </styled.a>
 </Ingredients>
 `;
 
 exports[`Igredients Component SUCCESS renders and create snapshot  <Ingredients /> 1`] = `
 <Ingredients
-  date="10-11-12"
+  date="2020-12-25"
+  onClickIngredient={[Function]}
   title="Cooking"
 >
-  <styled.div
+  <styled.a
     className="ingredients"
+    isDisabled={false}
+    isRecipes={false}
+    onClick={[Function]}
+    test_id="ingredients"
   >
-    <div
-      className="sc-AxjAm beINzg ingredients"
+    <a
+      className="sc-AxjAm jIXtAR ingredients"
+      onClick={[Function]}
     >
       <div
         className="ingredients--box"
@@ -89,13 +102,79 @@ exports[`Igredients Component SUCCESS renders and create snapshot  <Ingredients 
             Use By
           </div>
           <div
-            className="ingredients__date"
+            className="ingredients__date "
           >
-            10-11-12
+            2020-12-25
+             
           </div>
         </div>
       </div>
-    </div>
-  </styled.div>
+    </a>
+  </styled.a>
 </Ingredients>
+`;
+
+exports[`Igredients Component SUCCESS renders and create snapshot  <Ingredients /> 2`] = `
+<Ingredients
+  date="2020-12-25"
+  onClickIngredient={[Function]}
+  title="Cooking"
+>
+  <styled.a
+    className="ingredients"
+    isDisabled={false}
+    isRecipes={false}
+    onClick={[Function]}
+    test_id="ingredients"
+  >
+    <a
+      className="sc-AxjAm jIXtAR ingredients"
+      onClick={[Function]}
+    >
+      <div
+        className="ingredients--box"
+      >
+        <div
+          className="ingredients__text"
+          test_id="text-ingredients-top"
+        >
+          <div
+            className="ingredients__caption"
+          >
+            Title
+          </div>
+          <div
+            className="ingredients__title"
+          >
+            Cooking
+          </div>
+        </div>
+        <div
+          className="ingredients__text"
+          test_id="text-ingredients-bottom"
+        >
+          <div
+            className="ingredients__caption"
+          >
+            Use By
+          </div>
+          <div
+            className="ingredients__date "
+          >
+            2020-12-25
+             
+          </div>
+        </div>
+      </div>
+    </a>
+  </styled.a>
+</Ingredients>
+`;
+
+exports[`Igredients Component SUCCESS renders style  <Ingredients /> 1`] = `
+<styled.a>
+  <a
+    className="sc-AxjAm jIXtAR"
+  />
+</styled.a>
 `;

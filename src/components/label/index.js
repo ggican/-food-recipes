@@ -1,5 +1,6 @@
 import React from "react";
 import StyleLabel from "./index.style";
+import { defaultPropsType, interFace } from "./index.interface";
 
 const Label = ({ title = "-", onCloseLabel = () => {} }) => {
     const eventOnClickCloseLabel = (e, title) => {
@@ -21,5 +22,8 @@ const Label = ({ title = "-", onCloseLabel = () => {} }) => {
         </StyleLabel>
     );
 };
+
+Label.defaultProps = defaultPropsType;
+Label.propTypes = interFace;
 
 export default Label;

@@ -27,6 +27,7 @@ const Ingredients = ({
     };
     return (
         <StyleIngredients
+            test_id="ingredients"
             isRecipes={isRecipes}
             isDisabled={isDisabled}
             onClick={e =>

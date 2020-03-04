@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label Component SUCCESS renders and create snapshot  <Label /> 1`] = `
+<Label
+  onCloseLabel={[Function]}
+  title="Cooking"
+>
+  <styled.div>
+    <div
+      className="sc-AxjAm NVobY"
+    >
+      <div
+        className="label"
+      >
+        <div
+          className="label__text"
+        >
+          Cooking
+        </div>
+        <button
+          className="label__close"
+          onClick={[Function]}
+          type="button"
+        >
+          X
+        </button>
+      </div>
+    </div>
+  </styled.div>
+</Label>
+`;
+
+exports[`Label Component SUCCESS renders style  <Label /> 1`] = `
+<styled.div>
+  <div
+    className="sc-AxjAm NVobY"
+  />
+</styled.div>
+`;
