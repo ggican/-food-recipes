@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label Component SUCCESS renders and create snapshot  <Recipes /> 1`] = `
+<Recipes
+  title="Cooking"
+>
+  <styled.div>
+    <div
+      className="sc-AxjAm ikUmvW"
+    >
+      <div
+        className="recipes"
+      >
+        <div
+          className="recipes__title"
+        >
+          Cooking
+        </div>
+        <div
+          className="recipes__list-ingredients"
+        >
+          <div
+            test_id="children"
+          >
+            children
+          </div>
+        </div>
+      </div>
+    </div>
+  </styled.div>
+</Recipes>
+`;
+
+exports[`Label Component SUCCESS renders style  and create snapshot <RecipesLoading /> 1`] = `
+<RecipesLoading>
+  <styled.div>
+    <div
+      className="sc-AxjAm ikUmvW"
+    >
+      <div
+        className="recipes"
+      >
+        <div
+          className="recipes__title"
+        >
+          <Skeleton
+            height="10px"
+            marginBottom="7px"
+            width="80px"
+          >
+            <styled.div
+              as="div"
+              circle={false}
+              height="10px"
+              marginBottom="7px"
+              style={Object {}}
+              width="80px"
+            >
+              <div
+                className="sc-AxirZ fokiBL"
+                height="10px"
+                style={Object {}}
+                width="80px"
+              />
+            </styled.div>
+          </Skeleton>
+        </div>
+        <div
+          className="recipes__list-ingredients"
+        />
+      </div>
+    </div>
+  </styled.div>
+</RecipesLoading>
+`;
+
+exports[`Label Component SUCCESS renders style and create snapshot  <StyleRecpies /> 1`] = `
+<styled.div>
+  <div
+    className="sc-AxjAm ikUmvW"
+  />
+</styled.div>
+`;

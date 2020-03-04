@@ -32,9 +32,6 @@ describe("Igredients Component", () => {
         );
 
         failedElement = <Ingredients isRecipes={false}></Ingredients>;
-        loadingElement = (
-            <IngredientsLoading isRecipes={false}></IngredientsLoading>
-        );
     });
 
     it("SUCCESS renders and create snapshot  <Ingredients />", () => {
