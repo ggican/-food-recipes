@@ -19,8 +19,6 @@ export const servicesRedux = (state = initialState, action = {}) => {
             return resultReduxFn(state, action);
         case types.CREATED:
             return resultReduxFn(state, action);
-        case types.REDIRECT:
-            return resultReduxFn(state, action);
         case types.BAD_REQUEST:
             return resultReduxFn(state, action);
         case types.UNAUTHORIZED:
@@ -31,14 +29,9 @@ export const servicesRedux = (state = initialState, action = {}) => {
             return resultReduxFn(state, action);
         case types.CONFLICT:
             return resultReduxFn(state, action);
-        case types.TESTING:
-            return resultReduxFn(state, action);
-        case types.METHOD_NOT_ALLOWED:
-            return resultReduxFn(state, action);
         case types.INTERNAL_SERVICE_ERROR:
             return resultReduxFn(state, action);
-        case types.PUSH_DATA_CHECKOUT:
-            return resultReduxFn(state, action);
+
         case types.CLEAR:
             return {
                 ...state,

@@ -3,7 +3,7 @@ import Recipes from "./index";
 import StyleRecpies from "./index.style";
 import RecipesLoading from "./index.loading";
 
-describe("Label Component", () => {
+describe("Recipes Component", () => {
     let successElement;
 
     beforeEach(() => {

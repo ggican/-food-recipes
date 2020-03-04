@@ -3,7 +3,7 @@ import Ingredients from "./index";
 import IngredientsLoading from "./index.loading";
 import StyleIngredients from "./index.style";
 
-describe("Igredients Component", () => {
+describe("Ingredients Component", () => {
     let result;
 
     let successElement;

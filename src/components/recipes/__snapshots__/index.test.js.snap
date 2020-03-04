@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Label Component SUCCESS renders and create snapshot  <Recipes /> 1`] = `
+exports[`Recipes Component SUCCESS renders and create snapshot  <Recipes /> 1`] = `
 <Recipes
   title="Cooking"
 >
@@ -31,7 +31,7 @@ exports[`Label Component SUCCESS renders and create snapshot  <Recipes /> 1`] = 
 </Recipes>
 `;
 
-exports[`Label Component SUCCESS renders style  and create snapshot <RecipesLoading /> 1`] = `
+exports[`Recipes Component SUCCESS renders style  and create snapshot <RecipesLoading /> 1`] = `
 <RecipesLoading>
   <styled.div>
     <div
@@ -74,7 +74,7 @@ exports[`Label Component SUCCESS renders style  and create snapshot <RecipesLoad
 </RecipesLoading>
 `;
 
-exports[`Label Component SUCCESS renders style and create snapshot  <StyleRecpies /> 1`] = `
+exports[`Recipes Component SUCCESS renders style and create snapshot  <StyleRecpies /> 1`] = `
 <styled.div>
   <div
     className="sc-AxjAm ikUmvW"

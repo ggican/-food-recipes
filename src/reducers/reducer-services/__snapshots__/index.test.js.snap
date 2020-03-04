@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducer Services Component SUCCESS servicesRedux type 200 function and Snapshot servicesRedux 1`] = `
+Object {
+  "recipes": Object {
+    "ingredients": Object {
+      "data": Array [
+        "cool",
+      ],
+      "group": "recipes",
+      "isError": false,
+      "isSuccess": true,
+      "key": "ingredients",
+      "message": Object {
+        "message": "cool its me",
+      },
+      "reducer": "reducer",
+      "type": 200,
+    },
+  },
+}
+`;
+
+exports[`Reducer Services Component SUCCESS servicesState  Snapshot servicesState 1`] = `
+Object {
+  "recipes": Object {
+    "ingredients": false,
+  },
+}
+`;
