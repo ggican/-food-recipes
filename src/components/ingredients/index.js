@@ -11,14 +11,20 @@ const Ingredients = ({
     title = "-",
     isRecipes = false,
     date = "-",
+    dateRecipes,
     onClickIngredient = () => {},
 }) => {
     const [isDisabled, setDisabled] = useState(false);
     useEffect(() => {
-        if (!isRecipes && date !== "-" && moment().diff(date, "days") > 0) {
+        if (
+            !isRecipes &&
+            date !== "-" &&
+            dateRecipes &&
+            moment(dateRecipes).isAfter(date)
+        ) {
             setDisabled(true);
         }
-    }, [date, isRecipes]);
+    }, [date, isRecipes, dateRecipes]);
     const eventOnClickIngredient = (e, value) => {
         e.preventDefault();
         if (!isDisabled && !isRecipes) {
@@ -73,11 +79,15 @@ Ingredients.defaultProps = {
 };
 Ingredients.propTypes = {
     /**
-      Use title for `Ingredients` components by default is '-'
+      Use title for `Ingredients` components by default is `-`
       */
     title: PropTypes.string.isRequired,
     /**
-      Use date for `Ingredients` components by default is '-'
+      Use dateRecipes for `Ingredients` components by `Date Now` for setup date get ingredients
+      */
+    dateRecipes: PropTypes.string.isRequired,
+    /**
+      Use date for `Ingredients` components by default is `-`
       */
     date: PropTypes.string,
     /**

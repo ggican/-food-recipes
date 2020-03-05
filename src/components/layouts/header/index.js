@@ -1,16 +1,17 @@
 import React from "react";
+import Container from "../container";
 import StylesHeader from "./index.styles";
 
 const Header = () => {
     return (
         <StylesHeader id="header-components">
-            <header>
-                <nav>
-                    <ul>
-                        <li>LoadSmile</li>
-                    </ul>
-                </nav>
-            </header>
+            <Container>
+                <header>
+                    <nav>
+                        <h1>Recipes List</h1>
+                    </nav>
+                </header>
+            </Container>
         </StylesHeader>
     );
 };
