@@ -1,7 +1,7 @@
 import useDataFetching from "../../utils/customHooks/useDataFetching";
 import { defaultPropsType, interFace } from "./index.interface";
 
-const Wrapper = ({
+const CommonFetchData = ({
     renderLoading = () => {},
     renderFailed = () => {},
     renderSuccess = () => {},
@@ -42,7 +42,7 @@ const Wrapper = ({
     return render;
 };
 
-Wrapper.defaultProps = defaultPropsType;
-Wrapper.propTypes = interFace;
+CommonFetchData.defaultProps = defaultPropsType;
+CommonFetchData.propTypes = interFace;
 
-export default Wrapper;
+export default CommonFetchData;

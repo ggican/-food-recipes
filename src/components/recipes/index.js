@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // begin local import
 import StyleRecipes from "./index.style";
 import RecipesLoading from "./index.loading";
-import { defaultPropsType, interFace } from "./index.interface";
+
 // end local import
 
 const Recipes = ({ children, title = "-" }) => {
@@ -18,7 +19,21 @@ const Recipes = ({ children, title = "-" }) => {
 };
 
 Recipes.Loading = RecipesLoading;
-Recipes.defaultProps = defaultPropsType;
-Recipes.propTypes = interFace;
+Recipes.defaultProps = {
+    title: "-",
+};
+Recipes.propTypes = {
+    /**
+      Use title for `Recipes` components by default is `-`
+      */
+    title: PropTypes.string.isRequired,
+    /**
+      Use title for `Recipes` components `is Required`
+      */
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+    ]).isRequired,
+};
 
 export default Recipes;

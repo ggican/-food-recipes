@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import moment from "moment";
 
 // begin local import
 import StyleIngredients from "./index.style";
 import IngredientsLoading from "./index.loading";
-import { defaultPropsType, interFace } from "./index.interface";
 // end local import
 
 const Ingredients = ({
@@ -64,7 +64,30 @@ const Ingredients = ({
 };
 
 Ingredients.Loading = IngredientsLoading;
-Ingredients.defaultProps = defaultPropsType;
-Ingredients.propTypes = interFace;
+
+Ingredients.defaultProps = {
+    title: "-",
+    date: "-",
+    isRecipes: false,
+    onClickIngredient: () => {},
+};
+Ingredients.propTypes = {
+    /**
+      Use title for `Ingredients` components by default is '-'
+      */
+    title: PropTypes.string.isRequired,
+    /**
+      Use date for `Ingredients` components by default is '-'
+      */
+    date: PropTypes.string,
+    /**
+      Use isRecipes for `Ingredients` components by default is `false`
+      */
+    isRecipes: PropTypes.bool,
+    /**
+      Use onClickIngredient for `Ingredients` components by default is `()=>{}`
+      */
+    onClickIngredient: PropTypes.func,
+};
 
 export default Ingredients;

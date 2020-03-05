@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import StyleLabel from "./index.style";
-import { defaultPropsType, interFace } from "./index.interface";
 
 const Label = ({ title = "-", onCloseLabel = () => {} }) => {
     const eventOnClickCloseLabel = (e, title) => {
@@ -23,7 +24,20 @@ const Label = ({ title = "-", onCloseLabel = () => {} }) => {
     );
 };
 
-Label.defaultProps = defaultPropsType;
-Label.propTypes = interFace;
+Label.defaultProps = {
+    title: "-",
+    onCloseLabel: () => {},
+};
+
+Label.propTypes = {
+    /**
+      Use title for label components by default is '-'
+      */
+    title: PropTypes.string.isRequired,
+    /**
+      Use onCloseLabel for close label components
+      */
+    onCloseLabel: PropTypes.func.isRequired,
+};
 
 export default Label;
