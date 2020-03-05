@@ -9,7 +9,7 @@ Install application with `npm install`
 ### Story Book
 run story book for view documentation components
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Story Book View](https://i.imgur.com/Wliu3G8.png)
 
 #### `npm run storybook`
 run story book for view documentation components with `npm run storybook`
