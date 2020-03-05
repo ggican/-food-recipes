@@ -9,6 +9,8 @@ Install application with `npm install`
 ### Story Book
 run story book for view documentation components
 
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
 #### `npm run storybook`
 run story book for view documentation components with `npm run storybook`
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
