@@ -85,7 +85,7 @@ Ingredients.propTypes = {
     /**
       Use dateRecipes for `Ingredients` components by `Date Now` for setup date get ingredients
       */
-    dateRecipes: PropTypes.string.isRequired,
+    dateRecipes: PropTypes.string,
     /**
       Use date for `Ingredients` components by default is `-`
       */

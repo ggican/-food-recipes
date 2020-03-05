@@ -3,6 +3,7 @@
 exports[`Ingredients Component FAILED renders and create snapshot <Ingredients /> 1`] = `
 <Ingredients
   date="2020-12-25"
+  dateRecipes="2020-01-12"
   isRecipes={false}
   onClickIngredient={[Function]}
   title="Cooking"
@@ -61,6 +62,7 @@ exports[`Ingredients Component FAILED renders and create snapshot <Ingredients /
 exports[`Ingredients Component SUCCESS renders and create snapshot  <Ingredients /> 1`] = `
 <Ingredients
   date="2020-12-25"
+  dateRecipes="2020-01-12"
   isRecipes={false}
   onClickIngredient={[Function]}
   title="Cooking"
@@ -119,6 +121,7 @@ exports[`Ingredients Component SUCCESS renders and create snapshot  <Ingredients
 exports[`Ingredients Component SUCCESS renders and create snapshot  <Ingredients /> 2`] = `
 <Ingredients
   date="2020-12-25"
+  dateRecipes="2020-01-12"
   isRecipes={false}
   onClickIngredient={[Function]}
   title="Cooking"

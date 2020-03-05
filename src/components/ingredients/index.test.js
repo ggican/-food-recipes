@@ -18,6 +18,7 @@ describe("Ingredients Component", () => {
         styleIngredients = <StyleIngredients></StyleIngredients>;
         successElement = (
             <Ingredients
+                dateRecipes="2020-01-12"
                 onClickIngredient={onClickIngredient}
                 title="Cooking"
                 date="2020-12-25"
@@ -25,6 +26,7 @@ describe("Ingredients Component", () => {
         );
         successRecipesElement = (
             <Ingredients
+                dateRecipes="2020-01-12"
                 onClickIngredient={onClickIngredient}
                 isRecipes
                 title="Cooking"
